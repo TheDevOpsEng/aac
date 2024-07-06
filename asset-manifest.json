@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/aac/aac-app/static/css/main.5e5543b1.chunk.css",
+    "main.js": "/aac/aac-app/static/js/main.ea713c99.chunk.js",
+    "main.js.map": "/aac/aac-app/static/js/main.ea713c99.chunk.js.map",
+    "runtime-main.js": "/aac/aac-app/static/js/runtime-main.2936dc73.js",
+    "runtime-main.js.map": "/aac/aac-app/static/js/runtime-main.2936dc73.js.map",
+    "static/js/2.c3f6e356.chunk.js": "/aac/aac-app/static/js/2.c3f6e356.chunk.js",
+    "static/js/2.c3f6e356.chunk.js.map": "/aac/aac-app/static/js/2.c3f6e356.chunk.js.map",
+    "static/js/3.c0ee1048.chunk.js": "/aac/aac-app/static/js/3.c0ee1048.chunk.js",
+    "static/js/3.c0ee1048.chunk.js.map": "/aac/aac-app/static/js/3.c0ee1048.chunk.js.map",
+    "index.html": "/aac/aac-app/index.html",
+    "static/css/main.5e5543b1.chunk.css.map": "/aac/aac-app/static/css/main.5e5543b1.chunk.css.map",
+    "static/js/2.c3f6e356.chunk.js.LICENSE.txt": "/aac/aac-app/static/js/2.c3f6e356.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2936dc73.js",
+    "static/js/2.c3f6e356.chunk.js",
+    "static/css/main.5e5543b1.chunk.css",
+    "static/js/main.ea713c99.chunk.js"
+  ]
+}
