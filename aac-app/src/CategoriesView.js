@@ -48,7 +48,6 @@ const CategoriesView = () => {
       const newCategories = categories.map((cat) => {
         if (cat.id === selectedCategory.id) {
           if (selectedCategory.subcategory) {
-            // Update subcategory image
             return {
               ...cat,
               subcategories: cat.subcategories.map((sub) =>
@@ -58,7 +57,6 @@ const CategoriesView = () => {
               )
             };
           } else {
-            // Update category image
             return { ...cat, imageURL: URL.createObjectURL(image) };
           }
         }
@@ -78,9 +76,9 @@ const CategoriesView = () => {
     setShowingImagePicker(true);
   };
 
-  const handleSpeak = (text) => {
-    const utterance = new SpeechSynthesisUtterance(text);
-    window.speechSynthesis.speak(utterance);
+  const handleSpeech = (text) => {
+    const speech = new SpeechSynthesisUtterance(text);
+    window.speechSynthesis.speak(speech);
   };
 
   return (
@@ -88,17 +86,21 @@ const CategoriesView = () => {
       <div className="categories-grid">
         {categories.map((category) => (
           <div key={category.id}>
-            <CategoryView category={category} onEdit={() => {
-              setSelectedCategory(category);
-              setShowingImagePicker(true);
-            }} onSpeak={handleSpeak} />
+            <CategoryView
+              category={category}
+              onEdit={() => {
+                setSelectedCategory(category);
+                setShowingImagePicker(true);
+              }}
+              onSpeak={() => handleSpeech(category.name)}
+            />
             <div className="subcategories-grid">
               {category.subcategories.map((subcategory) => (
                 <CategoryView
                   key={subcategory.id}
                   category={subcategory}
                   onEdit={() => handleSubcategoryEdit(category, subcategory)}
-                  onSpeak={handleSpeak}
+                  onSpeak={() => handleSpeech(subcategory.name)}
                 />
               ))}
             </div>

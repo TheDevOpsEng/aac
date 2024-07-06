@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>AAC Communication App</h1>
+        <h1>AAC Communication App for Qasim</h1>
       </header>
       <CategoriesView />
     </div>
